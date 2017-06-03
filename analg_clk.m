@@ -1,6 +1,7 @@
 close all;
 clear;
-  a=imread('590717.png');
+  a=imread('590717.png'); % this image should be in your directory  or paste the address of your photo
+  a = imresize(a,[700 700]);
  imshow(a);
  rectangle('position',[1 1 700 700],'curvature',[1 1]);
 
